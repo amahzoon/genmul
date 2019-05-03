@@ -2,7 +2,7 @@
 
 # GenMul (version 1)
 
-GenMul is a multiplier generator which outputs multiplier circuits in Verilog. The input size of a multiplier and each multiplier stage can be configured with GenMul. For more information visit [sca-verification website](http://www.sca-verification.org).
+GenMul is a multiplier generator which outputs multiplier circuits in Verilog. The input size of a multiplier and each multiplier stage can be configured with GenMul. For more information visit [www.sca-verification.org](http://www.sca-verification.org). There you can also run GenMul via Browser.
 
 ## Clone
 
@@ -23,7 +23,7 @@ cmake ..
 make install -j2
 ```
 
-After installation, GenMul can be run from `bin\genmul`. 
+After installation, GenMul can be run from `bin/genmul`. 
 
 ## Installation (Emscripten)
 
@@ -36,7 +36,7 @@ emconfigure cmake ..
 emmake make install -j2
 ```
 
-The compiled files are accessible through `bin\genmul.js` and `bin\genmul.wasm`.
+The compiled files are accessible through `bin/genmul.js` and `bin/genmul.wasm`.
 
 Currecntly, we have used the compiled javaScript files in the [web-based version of Genmul](http://www.sca-verification.org/genmul).
 
