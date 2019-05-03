@@ -46,5 +46,5 @@ Currecntly, we have used the compiled javaScript files in the [web-based version
 ./genmul
 ```
 
-After running, GenMul ask you to Choose the architectures for the Partial Product Generator (PPG), Partial Product Accumulator (PPA), and Final Stage Adder (FSA), respectively. Then, the bit sizes of the first and second inputs have to be set. Finally, the Verilog file of the multiplier is generated.
+After running, GenMul asks you to choose the architectures for the Partial Product Generator (PPG), Partial Product Accumulator (PPA), and Final Stage Adder (FSA), respectively. Then, the bit sizes of the first and second inputs have to be set. Finally, the Verilog file of the multiplier is generated.
 
