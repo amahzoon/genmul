@@ -32,7 +32,7 @@ After installation, GenMul can be run from `bin/genmul`.
 ```bash
 mkdir build
 cd build
-emconfigure cmake ..
+emcmake cmake ..
 emmake make install -j2
 ```
 

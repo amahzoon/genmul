@@ -10,7 +10,7 @@ string moduleConnector(int nIn1, int nIn2, int firstStage, int secondStage, int 
 {
     assert(firstStage >= 1 && firstStage <= 2 && "The assigned number for the first stage should be 1 or 2!");
     assert(secondStage >= 1 && secondStage <= 4 && "The assigned number for the second stage should be 1, 2, 3, or 4!");
-    assert(thirdStage >= 1 && thirdStage <= 6 && "The assigned number for the third stage should be 1, 2, 3, 4, 5, or 6!");
+    assert(thirdStage >= 1 && thirdStage <= 7 && "The assigned number for the third stage should be 1, 2, 3, 4, 5, 6, or 7!");
     string firstStageName, secondStageName, thirdStageName;
 
     string file = ""; //the content of the final verilog file
@@ -98,6 +98,10 @@ string moduleConnector(int nIn1, int nIn2, int firstStage, int secondStage, int 
         nAdd = CarrySkipAdder(PPAInfo[0] - PPAInfo[2], PPAInfo[1], file);
         thirdStageName = "CK";
         break;
+    case 7:
+        nAdd = SerialPrefixAdder(PPAInfo[0] - PPAInfo[2], PPAInfo[1], file);
+        thirdStageName = "SE";
+        break;
     }
     //cout << "Final Stage Adder: DONE" << endl;
     /////////////////////////////////////////////////////
@@ -133,7 +137,7 @@ string nameMaker (int nIn1, int nIn2, int firstStage, int secondStage, int third
 {
     assert(firstStage >= 1 && firstStage <= 2 && "The assigned number for the first stage should be 1 or 2!");
     assert(secondStage >= 1 && secondStage <= 4 && "The assigned number for the second stage should be 1, 2, 3, or 4!");
-    assert(thirdStage >= 1 && thirdStage <= 6 && "The assigned number for the third stage should be 1, 2, 3, 4, 5, or 6!");
+    assert(thirdStage >= 1 && thirdStage <= 7 && "The assigned number for the third stage should be 1, 2, 3, 4, 5, 6, or 7!");
     string firstStageName, secondStageName, thirdStageName;
 
     string name;
@@ -183,6 +187,9 @@ string nameMaker (int nIn1, int nIn2, int firstStage, int secondStage, int third
         break;
     case 6:
         thirdStageName = "CK";
+        break;
+    case 7:
+        thirdStageName = "SE";
         break;
     }
 

@@ -3,6 +3,7 @@
 #include "LanderFischerAdder.hpp"
 #include "BrentKungAdder.hpp"
 #include "KoggeStoneAdder.hpp"
+#include "SerialPrefixAdder.hpp"
 #include "CarrySkipAdder.hpp"
 #include "CarrySkipAdderVariable.hpp"
 #include "PartialProductGenerator.hpp"

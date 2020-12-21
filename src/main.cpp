@@ -31,7 +31,8 @@ int main(int argc, char **argv)
     cout<<"/-------------------------------------------------------------------------\\"<<endl;
     cout<<"|  Multiplier Generator GenMul                                            |"<<endl;
     cout<<"|                                                                         |"<<endl;
-    cout<<"|  Copyright (c) 2019 Group of Computer Architecture.                     |"<<endl;
+    cout<<"|  Copyright (c) 2019-2020 University of Bremen, Germany.                 |"<<endl;
+    cout<<"|  Copyright (c) 2020 Johannes Kepler University Linz, Austria.           |"<<endl;
     cout<<"|                                                                         |"<<endl;
     cout<<"|  You can find GenMul at: http://www.sca-verification.org/genmul         |"<<endl;
     cout<<"|  Contact us at genmul@sca-verification.org                              |"<<endl;
@@ -72,10 +73,11 @@ int main(int argc, char **argv)
     cout<<"4. Kogge-Stone Adder"<<endl;
     cout<<"5. Brent-Kung Adder"<<endl;
     cout<<"6. Carry Skip Adder"<<endl;
+    cout<<"7. Serial Prefix Adder"<<endl;
     cout<<">> ";
     cin>>thirdStageString;
     cout<<"*************************************************************************"<<endl;
-    if (thirdStageString!="1" && thirdStageString!="2" && thirdStageString!="3" && thirdStageString!="4" && thirdStageString!="5" && thirdStageString!="6")
+    if (thirdStageString!="1" && thirdStageString!="2" && thirdStageString!="3" && thirdStageString!="4" && thirdStageString!="5" && thirdStageString!="6" && thirdStageString!="7")
     {
         cout<<"Wrong input!!!"<<endl;
         return 0;

@@ -456,9 +456,12 @@ string infoPrint (int firstInputLength, int secondInputLength, int firstStageID,
             break;
         case 6: thirdStage = "Carry skip adder [CS]";
             break;
+        case 7: thirdStage = "Serial prefix adder [SE]";
+            break;
     }
     info+="/*----------------------------------------------------------------------------\n";
-    info+="Copyright (c) 2019 Group of Computer Architecture.\n";
+    info+="Copyright (c) 2019-2020 University of Bremen, Germany.\n";
+    info+="Copyright (c) 2020 Johannes Kepler University Linz, Austria.\n";
     info+="This file has been generated with GenMul.\n";
     info+="You can find GenMul at: http://www.sca-verification.org/genmul\n";
     info+="Contact us at genmul@sca-verification.org\n\n";
